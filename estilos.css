@@ -1,0 +1,152 @@
+body {
+   font-family: 'Sacramento', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(325, 100%, 96%);
+    color: #04463db2;
+    line-height: 1.7;
+}
+
+.container {
+    width: 85%;
+    max-width: 960px; /* Un ancho máximo para mejor lectura en pantallas grandes */
+    margin: auto;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+header {
+    background-color: #ffd4d4; /* Un azul oscuro para el encabezado */
+    color: rgb(112, 75, 92);
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    margin: 1em 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #0e1f29;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f1bed6; /* Un color de énfasis al pasar el ratón */
+}
+
+.seccion {
+    padding: 40px 0;
+    border-bottom: 1px solid #094141; /* Separación visual entre secciones */
+}
+
+.seccion:last-child {
+    border-bottom: none;
+}
+
+.seccion h2 {
+    color: #403c41;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.seccion p {
+    margin-bottom: 15px;
+}
+
+.seccion ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.seccion ul li {
+    margin-bottom: 10px;
+}
+
+.seccion a {
+    color: #cbb5d1; /* Color para los enlaces dentro de las secciones */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.seccion a:hover {
+    color: #e9bbd0; /* Otro color de énfasis al pasar el ratón */
+}
+
+footer {
+    background-color: #ebb0e6;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+/* Estilos específicos para las imágenes */
+.imagen-ejemplo {
+    max-width: 80%; /* Ajusta el ancho máximo según necesites */
+    height: auto;
+    display: block; /* Para que la imagen ocupe el ancho disponible y tenga márgenes automáticos */
+    margin: 15px auto; /* Centrar la imagen horizontalmente y añadir margen vertical */
+    border: 1px solid #a17878; /* Un borde suave alrededor de la imagen */
+    box-shadow: 2px 2px 5px #ccc; /* Una sombra suave para destacar la imagen */
+}
+
+.icono-mecanismo {
+    width: 32px; /* Tamaño fijo para iconos */
+    height: 32px;
+    vertical-align: middle; /* Alinear verticalmente con el texto */
+    margin-right: 5px;
+}
+
+.logo-herramienta {
+    height: 24px; /* Ajusta la altura del logo según necesites */
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav ul {
+        margin-top: 0.5em;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .seccion h2 {
+        font-size: 1.7em;
+    }
+
+    .imagen-ejemplo {
+        max-width: 95%; /* Las imágenes ocupan más ancho en pantallas pequeñas */
+    }
+}
